@@ -16,13 +16,13 @@ const { product} = toRefs(props);
 
 			<div class="max-w-[1200px] mx-auto flex gap-4 justify-between">
 				<div class="w-2/5">
-					IMAGE
+					<img :src="product.image" />
 				</div>
 				<div class="w-2/5">
-					<div class="text-xl font-extrabold border-b border-gray-300 mb-2 pb-2">TITLE</div>
+					<div class="text-xl font-extrabold border-b border-gray-300 mb-2 pb-2">{{ product.title }}</div>
 					<div>
 						<div class="text-lg font-extrabold m-1">About this item</div>
-						<div>DESCRIPTION</div>
+						<div> {{ product.description }} </div>
 					</div>
 				</div>
 				<div class="w-1/5">
@@ -43,7 +43,7 @@ const { product} = toRefs(props);
 								</Link>
 							</div>
 							<div class="flex items-center justify-between pt-2">
-								<div class="text-red-600 text-sm font-bold">PRICE</div>
+								<div class="text-red-600 text-sm font-bold">{{ product.price }}</div>
 								<button
 									class="bg-yellow-400 px-2 font-bold text-sm rounded-lg border shadow-sm cursor-pointer"
 								>

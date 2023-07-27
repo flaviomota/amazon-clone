@@ -15,8 +15,8 @@ class ProductController extends Controller
      */
     public function index(int $id)
     {
-        return Inertia::render('Product', [
-            'product' => Product::find($id)
-        ]);
+			return Inertia::render('Product', [
+				'product' => Product::find($id)
+			]);
     }
 }
