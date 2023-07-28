@@ -93,7 +93,6 @@ const totalWithoutDot = () => {
 						"
 						:disabled="Number(total) === 0.00"
 						:class="Number(total) === 0.00 ? 'bg-gray-400' : 'bg-yellow-400 hover:bg-yellow-500'"
-						method="post"
 						as="button"
 						:href="
 							$page.props.auth.user !== null
